@@ -1,12 +1,13 @@
 {
   "name": "react-with-important-style",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "allows inline !important styles",
   "main": "lib/withImportantStyle.js",
   "scripts": {
     "test": "jest",
     "build": "babel src --out-dir lib",
-    "bundle": "browserify -t babelify demo.js > lib/bundle.js"
+    "bundle": "browserify -t babelify demo.js > lib/bundle.js",
+    "predeploy": "npm run build"
   },
   "jest": {
     "ignore": "./lib"
